@@ -87,3 +87,40 @@ let user2 = {
 };
 
 console.log(greetUser(user2));
+
+// Asgmt 8
+
+function getAdults(users){
+    return users.filter(user => user.age>18)
+}
+
+const users = [{
+    name: "Aditya",
+    age: 22,
+    address: "Ajmer"
+}, {
+    name: "harkirat",
+    age: 8,
+    address: "Chandigarh"
+}, {
+    name: "Saurav",
+    age: 25,
+    address: "Jaipur"
+}]
+
+console.log(getAdults(users));
+
+// Asgmt 9
+
+function getAdultMales(users){
+    return users.filter(user => user.age>18 && user.gender == "male")
+};
+
+const users1 = [
+  { name: "Alice", age: 25, gender: "female" },
+  { name: "Bob", age: 20, gender: "male" },
+  { name: "Charlie", age: 16, gender: "male" },
+  { name: "David", age: 30, gender: "male" }
+];
+
+console.log(getAdultMales(users1))
