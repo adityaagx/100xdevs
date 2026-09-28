@@ -124,3 +124,150 @@ const users1 = [
 ];
 
 console.log(getAdultMales(users1))
+
+// Asgmt 10
+
+function sum(n){
+    let total = 0
+    for(let i=1; i<=n; i++){
+        total=total+i
+    } return total
+};
+
+console.log(sum(6));
+console.log("aditya"); 
+
+// Asgmt 11
+
+const add = (a, b) => a+b;
+console.log(add(2,3))
+
+// Asgmt 12
+
+const fs = require("fs");
+
+// const contents = fs.readFileSync("a.txt", "utf-8");
+// console.log(contents);
+
+//Asgmt 13
+
+function sum(a, b){
+    return a+b;
+}
+
+function multiply(a, b){
+    return a*b;
+}
+
+function doOperation(a, b, op){
+    return op(a, b)
+};
+
+console.log(doOperation(7, 6, multiply));
+
+// Asgmt 14
+
+function run(){
+    console.log("i will run after 1 sec")
+}
+
+setTimeout(run, 1000);
+console.log("i will run immediately")
+
+// Asgmt 15
+
+function one(){
+    console.log("one")
+};
+
+function second(){
+    one()
+    console.log("second")
+};
+second();
+
+// Asgmt 16
+
+function calculateFinalPrice(price, customerType){
+
+    let discountRate = 0;
+
+    if(customerType == "VIP"){
+        discountRate = 0.2;
+    } if(customerType == "Regular"){
+        discountRate = 0.1;
+    } 
+
+    let finalPrice = price * (1 - discountRate)
+
+    if (price > 100){
+        finalPrice = finalPrice-5
+    } 
+      return finalPrice
+    }
+
+console.log(calculateFinalPrice(120, "VIP"));
+console.log(calculateFinalPrice(80, "Regular"));
+
+// Asgmt 17
+
+let cart = [10, 25, 50];
+
+function addItem(cartArray, newItem){
+    cartArray.push(newItem)
+};
+
+addItem(cart, 15)
+console.log("Cart after adding 15", cart)
+
+let savedCart = [...cart];
+console.log(savedCart);
+
+cart.push(100);
+
+console.log("Final value of cart with 100", cart);
+console.log("Unchanged savedCart", savedCart);
+
+//Asgmt 18
+
+let isDarkMode = false;
+
+function toggletheme(){
+    isDarkMode = !isDarkMode
+
+    if(isDarkMode){
+        console.log("Current theme dark");
+    } else{
+        console.log("Current theme light");
+    }
+}
+
+toggletheme();
+toggletheme();
+toggletheme();
+
+// Asgmt 19 - Arrow fn
+
+const addz = (a, b) => a+b;
+
+console.log(addz(3,4));
+
+// Asgmt 20 - Map fn
+
+const numbers = [10, 20, 30];
+
+const double = numbers.map(number => number * 2);
+
+console.log(double);
+
+// Asgmt 21 - Filter fn
+
+const marks = [24, 56, 65, 73, 32];
+
+const failStudents = marks.filter(mark => mark < 50);
+
+console.log(failStudents);
+
+// Asgmt 22
+
+console.log(new Date().getDay());
