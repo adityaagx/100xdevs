@@ -1,4 +1,4 @@
-// Asgmt 1
+// Asgmt 1 - variables
 
 let color = "blue"
 let height = 182
@@ -6,7 +6,7 @@ let likePizza = false
 
 console.log(color, height, likePizza);
 
-// Asgmt 2
+// Asgmt 2 - function
 
 function sum(a, b) {
     return console.log(a+b)
@@ -14,7 +14,7 @@ function sum(a, b) {
 
 sum(5, 4);
 
-// Asgmt 3
+// Asgmt 3 - Ternary operator
 
 function canVote(age) {
     return age > 18 ? "canVote" : "cannotVote";
@@ -22,7 +22,7 @@ function canVote(age) {
 
 console.log(canVote(8));
 
-// Asgmt 4
+// Asgmt 4 - if/else
 
 let number = 5;
 
@@ -32,7 +32,7 @@ if (number % 2 == 0) {
     console.log("This number is odd")
 };
 
-// Asgmt 5
+// Asgmt 5 - for loop
 
 function sum(a) {
     let total = 0;
@@ -43,7 +43,7 @@ function sum(a) {
 
 sum(5090);
 
-// Asgmt 6
+// Asgmt 6 - Array
 
 function greet(user){
    return `Hello ${user.name}, age ${user.age}`
@@ -57,7 +57,7 @@ let user1 = {
 
 console.log(greet(user1));
 
-// Asgmt 7
+// Asgmt 7 - Template literal
 
 function greetUser(user){
 
@@ -88,7 +88,7 @@ let user2 = {
 
 console.log(greetUser(user2));
 
-// Asgmt 8
+// Asgmt 8 - Arrow function
 
 function getAdults(users){
     return users.filter(user => user.age>18)
@@ -110,7 +110,7 @@ const users = [{
 
 console.log(getAdults(users));
 
-// Asgmt 9
+// Asgmt 9 - Filter fn
 
 function getAdultMales(users){
     return users.filter(user => user.age>18 && user.gender == "male")
@@ -125,7 +125,7 @@ const users1 = [
 
 console.log(getAdultMales(users1))
 
-// Asgmt 10
+// Asgmt 10 - for loop
 
 function sum(n){
     let total = 0
@@ -137,19 +137,19 @@ function sum(n){
 console.log(sum(6));
 console.log("aditya"); 
 
-// Asgmt 11
+// Asgmt 11 - Ternary operator
 
 const add = (a, b) => a+b;
 console.log(add(2,3))
 
-// Asgmt 12
+// Asgmt 12 - fs.readFile
 
 const fs = require("fs");
 
 // const contents = fs.readFileSync("a.txt", "utf-8");
 // console.log(contents);
 
-//Asgmt 13
+//Asgmt 13 - Callback fn
 
 function sum(a, b){
     return a+b;
@@ -165,7 +165,7 @@ function doOperation(a, b, op){
 
 console.log(doOperation(7, 6, multiply));
 
-// Asgmt 14
+// Asgmt 14 - setTimeout
 
 function run(){
     console.log("i will run after 1 sec")
@@ -174,7 +174,7 @@ function run(){
 setTimeout(run, 1000);
 console.log("i will run immediately")
 
-// Asgmt 15
+// Asgmt 15 - Callback fn
 
 function one(){
     console.log("one")
@@ -186,7 +186,7 @@ function second(){
 };
 second();
 
-// Asgmt 16
+// Asgmt 16 - if/else
 
 function calculateFinalPrice(price, customerType){
 
@@ -209,7 +209,7 @@ function calculateFinalPrice(price, customerType){
 console.log(calculateFinalPrice(120, "VIP"));
 console.log(calculateFinalPrice(80, "Regular"));
 
-// Asgmt 17
+// Asgmt 17 - Push
 
 let cart = [10, 25, 50];
 
@@ -228,7 +228,7 @@ cart.push(100);
 console.log("Final value of cart with 100", cart);
 console.log("Unchanged savedCart", savedCart);
 
-//Asgmt 18
+//Asgmt 18 - 
 
 let isDarkMode = false;
 
@@ -268,6 +268,82 @@ const failStudents = marks.filter(mark => mark < 50);
 
 console.log(failStudents);
 
-// Asgmt 22
+// Asgmt 22 - Date fn
 
 console.log(new Date().getDay());
+
+// Asgmt 23 - .push
+
+const shoppingList = ["Milk", "Eggs"];
+shoppingList.push("Bread");
+
+console.log(shoppingList);
+
+// Asgmt 24 - .pop
+
+const history = ["home", "about", "contact"];
+const lastVisited = history.pop()
+
+console.log(lastVisited);
+console.log(history);
+
+// Asgmt 25 - .unshift() & .shift()
+
+const tasks = ["Task B", "Task C"];
+tasks.unshift("Task A");
+const completedTask = tasks.shift()
+
+console.log(tasks);
+console.log(completedTask);
+
+// Asgmt 26 - .includes()
+
+const userRoles = ["admin", "editor", "author"];
+const isAllowed = userRoles.includes("subscriber");
+
+console.log(isAllowed);
+
+// Asgmt 27 - .find()
+
+const products = [
+  { id: 101, title: "Phone", price: 600 },
+  { id: 102, title: "Laptop", price: 1200 },
+  { id: 103, title: "Headphones", price: 150 }
+];
+
+const targetProduct = products.find(product => product.id === 102);
+console.log(targetProduct);
+
+// Asgmt 28 - .findIndex()
+
+const productsz = [
+  { id: 101, title: "Phone", price: 600 },
+  { id: 102, title: "Laptop", price: 1200 },
+  { id: 103, title: "Headphones", price: 150 }
+];
+
+const headphonesIndex = productsz.findIndex(product => product.title === "Headphones");
+console.log(headphonesIndex);
+
+// Asgmt 29 - slice()
+
+const leaderboard = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+const topThree = leaderboard.slice(0, 3);
+
+console.log(topThree);
+console.log(leaderboard);
+
+// Asgmt 30 - .forEach()
+
+const transactions = [100, -50, 200, -20];
+
+transactions.forEach(transaction => {
+    if(transaction<0){
+        console.log("Deposit:", transaction)
+    } else {
+        console.log("Withdrawal:", transaction)
+    }
+});
+
+
