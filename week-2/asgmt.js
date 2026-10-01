@@ -346,4 +346,34 @@ transactions.forEach(transaction => {
     }
 });
 
+// Asgmt 31 - Interview qns
+
+const calculateDiscount = (cartTotal, customerType) => {
+    if(cartTotal < 0){
+        return "Invalid Amount"
+    } else if(customerType === "Member"){
+        return cartTotal > 100 ? cartTotal * 0.85 : cartTotal * 0.9
+    } else if(customerType === "Regular"){
+        return cartTotal > 200 ? cartTotal - 15 : cartTotal
+    } else if(customerType === "VIP"){
+        return cartTotal * 0.8
+}};
+
+console.log(calculateDiscount(100, "VIP"));    
+console.log(calculateDiscount(150, "Member"));   
+console.log(calculateDiscount(250, "Regular"));  
+console.log(calculateDiscount(-50, "VIP"));
+
+// Asgmt 32 - settimeout revise
+
+const hey = setTimeout(() => {
+    console.log("Hello woels")
+}, 2000);
+const hy = "I will run first";
+
+console.log(hey);
+console.log(hy);
+
+
+
 
