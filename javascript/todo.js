@@ -7,4 +7,3 @@ buttonElement.addEventListener('click', () => {
     console.log(currentText);
     alert("The text inside is " + currentText);
 });
-
