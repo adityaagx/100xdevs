@@ -1,0 +1,1 @@
+This folder contains baisc javascript assignments.
