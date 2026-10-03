@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="todo.js" defer></script>
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Todo List</h2>
-    <input type="text" id="todoText" placeholder="Enter text here">
-    <button id="addTodo">Add Todo</button>
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+        
+        <div class="todo-input-section">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <ul id="todo-list">
+            <!-- New tasks will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
