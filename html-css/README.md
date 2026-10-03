@@ -1,3 +1,3 @@
-# 📂 Web development assignments
+# Assignments
 
 This folder contains my basic HTML and CSS assignments.
