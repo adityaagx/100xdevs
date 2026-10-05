@@ -1,0 +1,25 @@
+* {
+    margin: 0
+}
+
+.main {
+    display: flex;
+}
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50vw;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.two {
+    display: flex;
+    min-width: 50vh;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}

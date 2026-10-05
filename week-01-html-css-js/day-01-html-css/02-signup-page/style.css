@@ -1,0 +1,15 @@
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
