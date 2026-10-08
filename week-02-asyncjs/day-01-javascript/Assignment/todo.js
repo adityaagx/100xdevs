@@ -51,3 +51,8 @@ class Todo {
     this.todos = [];
   }
 }
+
+const todo1 = new Todo();
+todo1.add('Go to Gym');
+
+console.log(todo1.getAll());
